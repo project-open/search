@@ -1,19 +1,12 @@
 <master>
-<property name="title">@page_title@</property>
-<property name="context">@context;noquote@</property>
-<form method=GET action=search>
-  <small>
-    <a href=@url_advanced_search@>#search.Advanced_Search#</a>
-    <br>
-    <input type=text name=q size=31 maxlength=256 value="@query@">
-    <input type=submit value="#search.Search#" name=t>
-    <input type=submit value="#search.Feeling_Lucky#" name=t>
-  </small>
-</form>
+<if @dotlrn_p@ true><include src="/packages/dotlrn/www/dotlrn-search"></if>
 <if @t@ eq "Search">
   <i>#search.lt_Tip_In_most_browsers_#</i><br><br>
+  </if>
+<if @empty_p@ true>
+    <p class="hint">#search.lt_You_must_specify_some#</p>
 </if>
-
+<else>
 	<if @and_queries_notice_p@ eq 1>
       	  <font color=6f6f6f>
           #search.The#
@@ -33,23 +26,24 @@
       	  </font>
 	</if>
 
-<multiple name="searchresult">
+   <multiple name="searchresult">
 	<if @searchresult.title_summary@ nil>
-  		<a href=@searchresult.url_one@>#search.Untitled#</a><br>
+  		<a href="@searchresult.url_one@">#search.Untitled#</a><br>
 	</if>	
 	<else>
-	  <a href=@searchresult.url_one@>@searchresult.title_summary;noquote@</a><br>
+	  <a href="@searchresult.url_one@">@searchresult.title_summary;noquote@</a><br>
 	</else>
+
 	<if @searchresult.txt_summary@ nil>	
 	</if>
 	<else>	
 	@searchresult.txt_summary;noquote@<br>	
 	</else>
 	<font color=green>@searchresult.url_one@</font><br><br>
-</multiple>
+   </multiple>
 
-<if @count@ eq 0>
-  Your search - <b>@query@</b> - did not match any documents.
+  <if @count@ eq 0>
+  Your search - <b>@query@</b> - did not match any content.
   <br>#search.lt_No_pages_were_found_c#<b>@query@</b>".
   <br><br>#search.Suggestions#
   <ul>
@@ -60,8 +54,8 @@
       <li>#search.Try_fewer_keywords#
     </if>
   </ul>
-</if>
-<else>
+  </if>
+  <else>
   <table width=100% bgcolor=3366cc border=0 cellpadding=3 cellspacing=0>
     <tr><td>
       <font color=white>
@@ -74,7 +68,7 @@
     </td></tr>
   </table>
   <br clear=all>
-</else>
+  </else>
 
 <if @from_result_page@ lt @to_result_page@>
   <center>
@@ -93,18 +87,17 @@
 </if>
 <if @count@ gt 0>
   <center>
-    <table border=0 cellpadding=3 cellspacing=0>
-      <tr><td nowrap>
-        <form method=GET action=search>
-          <center>
-            <small>
-              <input type=text name=q size=31 maxlength=256 value="@query@">
-              <input type=submit value=Search>
-            </small>
-          </center>
+  <if @dotlrn_p@>
+    <include src="/packages/dotlrn/www/dotlrn-search">
+  </if>
+  <else>
+      <div>
+        <form method="get" action="search">
+          <input type="text" name="q" size="60" maxlength="256" value="@query@" />
+          <input type="submit" value="#search.Search#" />
         </form>
-      </td></tr>
-    </table>
+      </div>
+  </else>
   </center>
 
   <if @stw@ not nil>
@@ -113,3 +106,21 @@
     </center>
   </if>
 </if>
+</else>
+    <if @and_queries_notice_p@ eq 1>
+      <p class="hint">#search.and_not_needed# [<a href="help/basics#and">#search.details#</a>]</p>
+    </if>
+    <if @nstopwords@ eq 1>
+      <p class="hint">#search.lt_bstopwordsb_is_a_very# [<a href="help/basics#stopwords">#search.details#</a>]</p>
+    </if>
+    <if @nstopwords@ gt 1>
+      <p class="hint">#search.lt_The_following_words_a# [<a href="help/basics#stopwords">#search.details#</a>]</p>
+    </if>
+    
+    <if @debug_p@>
+      <p>#search.Searched_for_query#</p>
+      <p>#search.Results_count#</p>
+    </if>
+
+    </if>
+  </else>
