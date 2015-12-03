@@ -1,12 +1,12 @@
 <master>
-<property name="title">#search.Advanced_Search#</property>
+<property name="doc(title)">#search.Advanced_Search#</property>
 <property name="context">"advanced search"</property>
 
 <div>
 <form method=GET action=search>
 <p>
-<input type=text name=q size=41 maxlength=256 value="@q@">
-<input type=submit value="Search" name=t>
+<input type="text" name="q" size="41" maxlength="256" value="@q@">
+<input type="submit" value="Search" name="t">
 </p>
 <p>
 <label for="dfs">#search.Date_Range#</label>
