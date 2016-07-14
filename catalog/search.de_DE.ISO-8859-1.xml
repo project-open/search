@@ -5,13 +5,14 @@
   <msg key="anytime">jederzeit</msg>
   <msg key="Date_Range">Datumsspanne</msg>
   <msg key="details">Details</msg>
+  <msg key="Enter_keywords_to_search_for">Schlüsselwörtern eingeben</msg>
   <msg key="Feeling_Lucky">Auf gut Glück</msg>
-  <msg key="lt_bstopwordsb_is_a_very">'&lt;b&gt;%stopwords%&lt;/b&gt;' is ein sehr gebräuchliches Wort und ist daher in der Suche nicht verwendet worden</msg>
+  <msg key="lt_bstopwordsb_is_a_very">&#39;&lt;b&gt;%stopwords%&lt;/b&gt;&#39; is ein sehr gebräuchliches Wort und ist daher in der Suche nicht verwendet worden</msg>
   <msg key="lt_FtsEngineDriver_not_a">FtsEngineDriver ist nicht verfügbar</msg>
   <msg key="lt_Make_sure_all_words_a">Stellen Sie sicher das alle Worte richtig geschrieben sind.</msg>
   <msg key="lt_Try_different_keyword">Versuchen Sie unterschiedliche Schlüsselwörter</msg>
   <msg key="lt_Try_more_general_keyw">Versuchen Sie mehr generelle Schlüsselwörter</msg>
-  <msg key="lt_Try_your_query_on_stw">Versuchen Sie Ihre Suche mit '%stw;noquote%'</msg>
+  <msg key="lt_Try_your_query_on_stw">Versuchen Sie Ihre Suche mit &#39;%stw;noquote%&#39;</msg>
   <msg key="lt_You_must_specify_some">Sie müssen wenigstens ein Schlüsselwort spezifizieren</msg>
   <msg key="Next">Nächste</msg>
   <msg key="past_3_months">letzten 3 Monate</msg>
