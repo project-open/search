@@ -7,7 +7,7 @@
   <msg key="anytime">jederzeit</msg>
   <msg key="Date_Range">Datumsspanne</msg>
   <msg key="details">Details</msg>
-  <msg key="Enter_keywords_to_search_for">Schlüsselwörtern eingeben</msg>
+  <msg key="Enter_keywords_to_search_for">Suchbegriffe eingeben</msg>
   <msg key="Feeling_Lucky">Auf gut Glück</msg>
   <msg key="lt_bstopwordsb_is_a_very">&#39;&lt;b&gt;%stopwords%&lt;/b&gt;&#39; is ein sehr gebräuchliches Wort und ist daher in der Suche nicht verwendet worden</msg>
   <msg key="lt_FtsEngineDriver_not_a">FtsEngineDriver ist nicht verfügbar</msg>

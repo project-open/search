@@ -1,19 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <message_catalog package_key="search" locale="pl_PL" charset="utf-8">
 
+  <msg key="________Search_took">. Wyszukiwanie zajęło</msg>
+  <msg key="Advanced_Search">Wyszukiwanie zaawansowany</msg>
+  <msg key="advanced_search">&#34;wyszukiwanie zaawansowane&#34;</msg>
+  <msg key="anytime">kiedykolwiek</msg>
+  <msg key="Date_Range">Zakres dat</msg>
+  <msg key="details">szczegóły</msg>
+  <msg key="Enter_keywords_to_search_for">Wpisz słowa kluczowe do wyszukania</msg>
+  <msg key="Feeling_Lucky">Mam farta</msg>
+  <msg key="lt_bstopwordsb_is_a_very">&#34;&lt;b&gt;%stopwords%&lt;/b&gt;&#34; jest wyrazem powszechnie używanym i nie został uwzględniony w wyszukiwaniu</msg>
+  <msg key="lt_Make_sure_all_words_a">Upewnij się, że wszystkie słowa są napisane poprawnie.</msg>
+  <msg key="lt_No_pages_were_found_c">Nie znaleziono stron zawierających &#34;</msg>
+  <msg key="lt_The_following_words_a">Następujące wyrazy są bardzo często używane i nie zostały włączone do wyszukiwania:</msg>
+  <msg key="lt_Tip_In_most_browsers_">Wskazówka: W większości przeglądarek możesz nacisnąć &#34;Wstecz&#34; zamiast klikać w przycisk wyszukiwania.</msg>
   <msg key="lt_Try_different_keyword">Spróbuj z innymi słowami kluczowymi.</msg>
   <msg key="lt_Try_more_general_keyw">Spróbuj bardziej ogólnych słów kluczowych.</msg>
+  <msg key="lt_Try_your_query_on_stw">Wypróbuj swoje zapytanie na: %stw;noquote%</msg>
   <msg key="lt_You_must_specify_some">Musisz podać jakieś słowa kluczowe.</msg>
+  <msg key="nbspDisplay">&amp;nbsp;Wyświetl</msg>
   <msg key="Next">Następne</msg>
+  <msg key="of_about">około</msg>
   <msg key="past_3_months">zeszłe 3 miesiące</msg>
   <msg key="past_6_months">zeszłych 6 miesięcy</msg>
   <msg key="past_year">zeszły rok</msg>
   <msg key="Previous">Poprzednie</msg>
   <msg key="Result_page">Strona Wyników:</msg>
+  <msg key="Results">Wyniki</msg>
   <msg key="results">wyniki</msg>
   <msg key="Search">Szukaj</msg>
   <msg key="Searched_for_query">Szukano frazy: &lt;b&gt;%query%&lt;/b&gt;</msg>
+  <msg key="seconds">sekund.</msg>
+  <msg key="selected">wybrane</msg>
   <msg key="Suggestions">Sugestie:</msg>
+  <msg key="The">Operator &#34;&lt;b&gt;AND&lt;/b&gt;&#34; jest niepotrzebny, domyślnie wykorzystujemy wszystkie słowa kluczowe w wyszukiwaniu</msg>
   <msg key="Try_fewer_keywords">Spróbuj wpisać mniej słów.</msg>
-  <msg key="Untitled">Bez Tytułu</msg>
+  <msg key="Untitled">Bez tytułu</msg>
 </message_catalog>
